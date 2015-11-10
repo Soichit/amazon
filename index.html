@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>crud</title>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>
+        <script type="text/javascript" src="raty-2.7.0/vendor/jquery.js"></script>
+        <script type="text/javascript" src="raty-2.7.0/lib/jquery.raty.js"></script>
+        <link rel="stylesheet" href="raty-2.7.0/lib/jquery.raty.css" />
+    </head>
+
+
+    <body>
+    	<div id="top" class="container-fluid">          
+            <h1>Segway Hover Boards</h1>
+            <img src='hover.jpg' id="hover"/>
+            <br>
+            <h4 id="averageRatings"> Average Rating: </h4>
+            <br>
+            <p>Only $299.99! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div class="container-fluid">
+        <h2>Write a Review!</h2>
+            <form id="write-review">
+                <div id="ratings"></div>
+                <br>
+                <input id="revTitle" class="form-control" placeholder="a title for your review"></input>
+                <br>
+                <textarea id="revDescription" class="form-control" placeholder="what did you think of this?"></textarea>
+                <br>
+                <button type="submit" class="btn btn-success">Save</button>
+                <br>
+            </form>
+    	</div>
+
+
+        <div class="container-fluid">
+            <h2>Reviews</h2>
+            <ul>
+            </ul>
+        </div>
+
+        <script type="text/javascript" src="review.js"></script>
+    </body>
+</html>
